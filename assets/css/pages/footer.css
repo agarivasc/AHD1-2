@@ -1,0 +1,24 @@
+footer{
+    background-color: #454955;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer-links {
+    color: white; /* Aplica color blanco a todo el contenido del div */
+}
+
+.footer-links a {
+    color: white; /* Aplica color blanco a los enlaces */
+    text-decoration: none; /* Remueve el subrayado de los enlaces, opcional */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el cursor sobre el enlace, opcional */
+}
+
+.footer-text {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}

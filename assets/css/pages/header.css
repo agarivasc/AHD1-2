@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #72B01D;
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.logo {
+    order: 2; /* Muestra el logo en segundo lugar */
+    font-size: 4vw;
+    margin-top: 20px; /* Espacio entre el menú y el logo */
+}
+
+nav {
+    order: 1; /* Muestra el menú en primer lugar */
+    width: 100%; /* Asegura que el nav ocupe todo el ancho disponible */
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav li:last-child {
+    margin-right: 0; /* Remueve el margen derecho del último elemento */
+}
+
+nav li a {
+    color: #192c07;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+/* Media Queries para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .logo {
+        font-size: 3.8vw;
+    }
+
+    nav li a {
+        font-size: 2.5vw;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 4vw;
+    }
+
+    nav li a {
+        font-size: 3.8vw;
+    }
+}
+
